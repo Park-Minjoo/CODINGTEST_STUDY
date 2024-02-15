@@ -52,3 +52,9 @@ for i in range(x1, x2 + 1): # 1 -> .X.
         if arr[i][j] == 'X': # arr[2][1]
             y1 = min(y1, j) # min(2, 1) = 1
             y2 = max(y2, j) # max(0, 1) = 1
+
+# 정답 출력하기
+for i in range(x1, x2+1):
+    for j in range(y1, y2+1):
+        print(arr[i][j], end='')
+    print()
