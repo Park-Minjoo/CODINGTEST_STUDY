@@ -9,8 +9,8 @@ https://youtu.be/m-9pAwq1o3w?si=0eh-RmWAz5VOwPbD
 https://github.com/tony9402/baekjoon?tab=readme-ov-file
 
 ### Since 2024.02.14 ~
-#### 현재까지 풀어본 총 문제 수 : 0 개
-- BaekJoon - 0 개
+#### 현재까지 풀어본 총 문제 수 : 5 개
+- BaekJoon - 5 개
 - leetCode - 0 개
 - Programmers - 0 개
 - HackerRank - 0 개
