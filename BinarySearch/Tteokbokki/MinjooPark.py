@@ -1,18 +1,22 @@
-import sys
-n, m = map(int, sys.stdin.readline().split())
-arr = list(map(int, sys.stdin.readline().split()))
+n, m = list(map(int, input().split(' ')))
+arr = list(map(int, input().split()))
 
-sorted_arr = sorted(arr)
-end = sorted_arr[n-1] # 19
-start = sorted_arr[0]
+end = max(arr) # 19
+start = 0 # 10
 
 
-for i in range(end - 1, start, -1):
+result = 0
+while start <= end:
     count = 0
-    for j in range(len(sorted_arr)):
-        if sorted_arr[j] - i >= 0:
-            count += sorted_arr[j] - i
-    if count == m:
-        break
-print(i)
+    mid = (end + start) // 2
 
+    for i in arr:
+        if i > mid:
+            count += i - mid
+    if count < m:
+        end = mid - 1
+    else:
+        result = mid
+        start = mid + 1
+
+print(result)
