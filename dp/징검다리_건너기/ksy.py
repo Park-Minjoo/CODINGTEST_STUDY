@@ -3,6 +3,10 @@ import sys, copy
 '''
 문제: 징검다리 건너기 (실버1)
 분류: dp
+메모리: 31716 KB
+시간: 56 ms
+
+* deepcopy를 사용 안 해서 계속 틀린 문제 -> 참조값 변형 주의 하기
 '''
 
 n = int(sys.stdin.readline())
