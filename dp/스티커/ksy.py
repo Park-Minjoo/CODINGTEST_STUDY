@@ -3,6 +3,10 @@ import sys
 '''
 문제: 스티커 (실버1)
 분류: dp
+메모리: 48892 KB
+시간: 812 ms
+
+* 점화식을 못 찾아서, 검색한 문제 (코드 확인 X) - 나중에 다시 풀어보기
 '''
 
 t = int(sys.stdin.readline())
@@ -25,5 +29,3 @@ for _ in range(t):
         dp[1][i] = stickers[1][i] + max(dp[0][i-1], dp[0][i-2])
     
     print(max(dp[0][n-1], dp[1][n-1]))
-
-    print(dp)
