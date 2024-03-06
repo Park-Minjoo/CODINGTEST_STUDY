@@ -19,10 +19,13 @@ dp2 = dp[:]
 
 # 기회 1번 사용
 for i in range(0, n-3):
+
     if dp[i] + k < dp[i+3]:
         dp2[i+3] = dp[i] + k
+
     for j in range(i+4, n):
         dp2[j] = min(dp[j], dp2[j-1] + energy[j-1][0], dp2[j-2] + energy[j-2][1])
+
     if dp2[-1] < result:
         result = dp2[-1]
 print(result)
