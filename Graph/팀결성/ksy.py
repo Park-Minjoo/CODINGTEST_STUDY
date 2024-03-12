@@ -10,7 +10,9 @@ def find_team(parents, node):
     return parents[node]
 
 def union_team(parents, node1, node2):
-    team = min(find_team(parents, node1), find_team(parents, node2))
+    node1 = find_team(parents, node1)
+    node2 = find_team(parents, node2)
+    team = min(node1, node2)
     parents[node1] = team
     parents[node2] = team
 
