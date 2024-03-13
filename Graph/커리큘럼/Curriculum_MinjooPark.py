@@ -32,7 +32,7 @@ def topology_sort():
         now = q.popleft()
         result.append(now)
         # 해당 노드의 진입차수에서 1빼기
-        for i in graph[now]:
+        for i in graph[now]: # [[], [2, 3, 4], [], [4, 5], [], []]
             result[i] = max(result[i], result[now] + time[i])
             indegree[i] -= 1
             # 새롭게 진입차수가 0이 되는 노드를 큐에 삽입
