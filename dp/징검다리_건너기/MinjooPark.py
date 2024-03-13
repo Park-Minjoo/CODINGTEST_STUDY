@@ -16,7 +16,7 @@ for i in range(3, n):
 
 result = dp[-1]
 dp2 = dp[:]
-
+# print(dp2)
 # 기회 1번 사용
 for i in range(0, n-3):
 
