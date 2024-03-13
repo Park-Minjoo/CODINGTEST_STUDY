@@ -1,4 +1,4 @@
-import sys
+import sys, copy
 from collections import deque
 
 '''
@@ -6,7 +6,8 @@ from collections import deque
 '''
 
 def solution():
-    result = times[:]
+    # result = times[:]
+    result = copy.deepcopy(times)
     queue = deque()
 
     for i in range(1, n + 1):
