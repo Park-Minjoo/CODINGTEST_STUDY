@@ -5,6 +5,7 @@
 - 기간: 2024.02.14 ~
 - 시간: 매주 수요일 & 시간은 유동적으로 일주일마다 설정
 - 인원: 4명
+- [주차별 진행 현황](https://github.com/Park-Minjoo/CODINGTEST_STUDY/wiki)
 
 | [<img src="https://avatars.githubusercontent.com/Park-Minjoo" width="130px;" style="max-width: 100%;">](https://github.com/Park-Minjoo) | [<img src="https://avatars.githubusercontent.com/JangWooJin1" width="130px;" style="max-width: 100%;">](https://github.com/JangWooJin1) | [<img src="https://avatars.githubusercontent.com/leemoongi" width="130px;" style="max-width: 100%;">](https://github.com/leemoongi) | [<img src="https://avatars.githubusercontent.com/yeonkkk" width="130px;" style="max-width: 100%;">](https://github.com/yeonkkk) |
 |:---------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|
@@ -24,6 +25,7 @@
 
 
 ### 자료구조 & 알고리즘 학습 순서
+
 
 | 순번 |           유형            | 완료 | 
 |:--:|:-----------------------:|:--:|
