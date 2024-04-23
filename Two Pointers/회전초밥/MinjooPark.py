@@ -1,4 +1,5 @@
 # 참고: https://wooono.tistory.com/655
+
 import sys
 input = sys.stdin.readline
 from collections import defaultdict
