@@ -8,26 +8,32 @@ g = [[] for _ in range(n+1)]
 for _ in range(m):
     a, b = map(int, input().split())
     g[b].append(a)
+
 def bfs(start):
     q = deque()
     q.append(start)
+    # print(q)
     cnt = 0
-
-    visited = [False] * (n+1)
-    visited[start] = True
-
+    visited = [0] * (n+1)
+    visited[start] = 1
+    # print(visited)
     while q:
+        # print(q)
         cur = q.popleft()
         for next in g[cur]:
+            # print(next)
             if not visited[next]:
-                visited[next] = True
+                visited[next] = 1
                 q.append(next)
                 cnt += 1
+                # print(visited, q, cnt)
     return cnt
 
 res = []
 for start in range(1, len(g)):
+    # print('start:', start)
     res.append(bfs(start))
+    # print(res)
 
 for i in range(len(res)):
     if max(res) == res[i]:
