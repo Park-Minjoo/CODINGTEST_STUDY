@@ -36,7 +36,6 @@ for i in range(n):
     for j in range(n):
         if graph[i][j] == 1:
             cnt.append(bfs(graph, i, j))
-
 cnt.sort()
 print(len(cnt))
 for i in range(len(cnt)):
