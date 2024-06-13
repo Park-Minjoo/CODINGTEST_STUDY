@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
  * 문제: ABCDE 링크: https://www.acmicpc.net/problem/13023
  */
 
-public class Main {
+public class Ksy {
 
     static boolean checkFriend = false;
     static ArrayList<Integer>[] friends;
