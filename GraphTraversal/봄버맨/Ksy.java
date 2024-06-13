@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Ksy {
 
     public static final int[] dx = {0, 0, 1, -1};
     public static final int[] dy = {1, -1, 0, 0};
