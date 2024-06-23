@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-// 실패한 코드
+// 못 푼 문제 (실패한 코드)
 public class Ksy {
 
     private final static int[] dx = {1, -1, 0, 0};
