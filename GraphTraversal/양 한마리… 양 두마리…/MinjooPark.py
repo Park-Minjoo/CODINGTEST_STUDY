@@ -25,6 +25,7 @@ for _ in range(T):
 
     print(count)
 
+
 '''
 Input
 2
