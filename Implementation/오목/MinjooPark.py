@@ -1,18 +1,18 @@
 import sys
-
 input = sys.stdin.readline
 
 board = []
 for i in range(19):
     board.append(list(map(int, input().split())))
 
+# → ↓ ↘ ↗
 dx = [0, 1, 1, -1]
 dy = [1, 0, 1, 1]
 
 for x in range(19):
     for y in range(19):
         if board[x][y] != 0: # 돌이 있는 칸
-            focus = board[x][y] # 돌의 색 저징
+            focus = board[x][y] # 돌의 색 저장
 
             for i in range(4):
                 cnt = 1
@@ -24,11 +24,9 @@ for x in range(19):
 
                     if cnt == 5: # 5가 되었음
                         # 오목이 되었으나 육목 체크
-                        if 0 <= x - dx[i] < 19 and 0 <= y - dy[i] < 19 \
-                                and board[x - dx[i]][y - dy[i]] == focus: # 반대칸에 하나 더 있거나
+                        if 0 <= x - dx[i] < 19 and 0 <= y - dy[i] < 19 and board[x - dx[i]][y - dy[i]] == focus: # 앞에 한칸에 더 있으면
                             break
-                        if 0 <= x - dx[i] < 19 and 0 <= y - dy[i] < 19 \
-                                and board[nx + dx[i]][ny + dy[i]] == focus: # 앞에 한칸에 더 있으면
+                        if 0 <= nx + dx[i] < 19 and 0 <= ny + dy[i] < 19 and board[nx + dx[i]][ny + dy[i]] == focus: # 반대칸에 하나 더 있거나
                             break
                         print(focus)
                         print(x+1, y+1)
