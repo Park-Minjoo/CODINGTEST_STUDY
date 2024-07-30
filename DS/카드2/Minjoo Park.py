@@ -9,4 +9,3 @@ while(len(deque)>1):
     deque.append(move)
 
 print(deque[0])
-
