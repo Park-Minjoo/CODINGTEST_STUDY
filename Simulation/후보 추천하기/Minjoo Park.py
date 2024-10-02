@@ -20,12 +20,3 @@ def solution():
     print(' '.join(map(str, result)))
 
 solution()
-'''
-Input
-3
-9
-2 1 4 3 5 6 2 7 2
-
-Output
-2 6 7
-'''
