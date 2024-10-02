@@ -34,3 +34,4 @@ A = deque(list(map(int, stdin.readline().split())))
 
 response = solution(N, K, A)
 print(response)
+
