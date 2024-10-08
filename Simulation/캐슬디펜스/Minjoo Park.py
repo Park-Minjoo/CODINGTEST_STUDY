@@ -1,4 +1,5 @@
 # check: https://ryu-e.tistory.com/105
+# --Runtime Error--
 
 import sys
 input = sys.stdin.readline
